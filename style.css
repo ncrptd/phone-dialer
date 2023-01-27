@@ -1,0 +1,84 @@
+:root {
+  --base-color: white;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phone {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.24);
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  padding: 5px 0 5px 0;
+}
+.bubble {
+  height: 50px;
+  width: 60px;
+  background-color: aquamarine;
+  border-radius: 30%;
+  transition: all 200ms ease-in 200ms;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bubble:active {
+  background-color: paleturquoise;
+  transform: scale(1.2);
+  opacity: 0.6;
+  border-radius: 40%;
+  transition: transform 100ms cubic-bezier(0.5, 1.75, 0.75, 1.25);
+}
+
+.notification-bar {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 3px;
+  background-color: white;
+  border-bottom: none;
+}
+.screen {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+label {
+  font-size: 10px;
+}
+
+.notification-bar {
+  margin-bottom: 10px;
+}
+.all-contacts-section {
+  margin-bottom: 10px;
+}
+.contact {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.make-contact-section {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  font-size: 15px;
+}
